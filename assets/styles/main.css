@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-fundo: #fafafa;
+    --cor-fundo-rodape: #FFF5BA;
+    --cor-fundo-caixa:#FFCCCB;
+    
+    --cor-texto: #272626;
+    
+    --cor-botao: #d49af0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: var(--cor-fundo);
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-texto);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100vw;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.cabecalho .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-shadow: -3px 1px 3px rgba(0, 0, 0, 0.322);
+}
+
+.cabecalho .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--cor-texto);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 4rem;
+}
+
+.container img{
+    width: 50%;
+}
+
+.sobre, .produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor-fundo-caixa);
+    border: #d49af0 double .5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    
+}
+
+.sobre>h2, .produtos>h2{
+    text-shadow: -3px 1px 3px rgba(0, 0, 0, 0.322);
+}
+
+.produtos .saiba-mais{
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--cor-botao);
+    color: var(--cor-texto);
+    font-size: .9rem;
+    font-weight: 600;
+    padding: 1rem;
+    cursor: pointer;
+    animation: piscar 1s infinite;
+    transition: transform .3s ;
+}
+
+.produtos .saiba-mais:hover{
+    transform: scale(1.1);
+}
+
+@keyframes piscar{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.rodape{
+    text-align: center;
+    width: 100vw;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--cor-fundo-rodape);
+}
