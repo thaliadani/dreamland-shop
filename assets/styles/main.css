@@ -7,13 +7,13 @@
 }
 
 :root{
-    --cor-fundo: #fafafa;
-    --cor-fundo-rodape: #FFF5BA;
-    --cor-fundo-caixa:#FFCCCB;
+    --cor-fundo: #fff8f8;
+    --cor-fundo-rodape: #ebb9ff;
+    --cor-fundo-caixa:#ffb3d4;
     
     --cor-texto: #272626;
-    
-    --cor-botao: #d49af0;
+    --cor-borda: #ffe77d;
+    --cor-botao: #ffe77d;
 }
 
 body{
@@ -43,6 +43,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    font-size: 1.5rem;
     text-shadow: -3px 1px 3px rgba(0, 0, 0, 0.322);
 }
 
@@ -52,6 +53,16 @@ body{
     justify-content: center;
     gap: 1rem;
     color: var(--cor-texto);
+    font-size: 1.1rem;
+}
+
+.cabecalho .menu a{
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.cabecalho .menu a:hover{
+    text-decoration: underline;
 }
 
 .container{
@@ -74,7 +85,7 @@ body{
     justify-content: center;
     text-align: center;
     background-color: var(--cor-fundo-caixa);
-    border: #d49af0 double .5rem;
+    border: var(--cor-borda) double .5rem;
     border-radius: 1rem;
     padding: 1rem;
     gap: 1rem;
@@ -90,7 +101,7 @@ body{
     border-radius: .5rem;
     background-color: var(--cor-botao);
     color: var(--cor-texto);
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 600;
     padding: 1rem;
     cursor: pointer;
