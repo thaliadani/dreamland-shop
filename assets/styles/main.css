@@ -74,8 +74,15 @@ body{
     gap: 4rem;
 }
 
-.container img{
-    width: 50%;
+.container .imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .imagem img{
+    width: 60%;
 }
 
 .sobre, .produtos{
@@ -126,8 +133,11 @@ body{
 }
 
 .rodape{
-    text-align: center;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     padding: 1rem;
     margin-top: 2rem;
     background-color: var(--cor-fundo-rodape);
