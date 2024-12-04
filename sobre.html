@@ -12,17 +12,28 @@
 <body>
     <header class="cabecalho">
         <section class="titulo">
-            <img src="./assets/imgs/icon-star.svg" alt="">
+            <img src="./assets/imgs/icon-star.svg" alt="logo">
             <h1>Dreamland Shop</h1>
         </section>
 
         <nav class="menu">
-            <a href="./index.html">Inicio</a>
-            <a href="#">Roupas</a>
-            <a href="#">Acessórios</a>
-            <a href="./sobre.html">Sobre</a>
+            <button type="button" title="abrir-menu" id="abrir-menu"><box-icon name='menu'></box-icon></button>
+            <ul id="lista-menu">
+                <li><a href="./index.html" rel="noopener noreferrer">Início</a></li>
+                <li><a href="./produtos.html" rel="noopener noreferrer">Roupas</a></li>
+                <li><a href="./produtos.html" rel="noopener noreferrer">Acessórios</a></li>
+                <li><a href="./contato.html" rel="noopener noreferrer">Contato</a></li>
+                <li><a href="./sobre.html" rel="noopener noreferrer">Sobre</a></li>
+            </ul>
+            
+            <a class="compras" href="#"><box-icon type='solid' name='cart'></box-icon></a>
         </nav>
+        
     </header>
+    <div class="fonte">
+        <button type="button" id="aumentar-fonte">+ Fonte</button>
+        <button type="button" id="diminuir-fonte">- Fonte</button>
+    </div>
     <main class="container">
         <figure class="imagem">
             <img src="./assets/imgs/kirby-star.png" alt="kirby em uma estrela">
@@ -39,8 +50,21 @@
     </main>
     <footer class="rodape">
         <h8>&copy; Dreamland Shop. Todos os direitos reservados</h8>
+        <ul class="redes">
+            <li>
+                <a href="http://facebook.com.br" target="_blank" rel="noopener noreferrer">
+                    <box-icon type='logo' name='facebook-circle' size='md'></box-icon>
+                </a>
+            </li>
+            <li>
+                <a href="http://instagram.com.br" target="_blank" rel="noopener noreferrer">
+                    <box-icon name='instagram-alt' type='logo' size='md'></box-icon>
+                </a>
+            </li>
+        </ul>
     </footer>
     <script src="./assets/src/script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>

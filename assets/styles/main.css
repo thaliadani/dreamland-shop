@@ -4,12 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 :root{
     --cor-fundo: #fff8f8;
     --cor-fundo-rodape: #ebb9ff;
-    --cor-fundo-caixa:#ffb3d4;
+    --cor-fundo-caixa:linear-gradient(90deg, rgba(254,152,196,1) 0%, rgba(255,179,212,1) 71%);;
     
     --cor-texto: #272626;
     --cor-borda: #ffe77d;
@@ -23,17 +26,11 @@ body{
     justify-content: center;
     width: 100vw;
     background-color: var(--cor-fundo);
-    font-family: 'Poppins', sans-serif;
     color: var(--cor-texto);
 }
 
 .cabecalho{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 100vw;
+    width: 100%;
     padding: 1rem;
     margin-bottom: 3rem;
 }
@@ -49,20 +46,70 @@ body{
 
 .cabecalho .menu{
     display: flex;
+    justify-content:space-between;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
+    padding: 0 2rem;
     color: var(--cor-texto);
     font-size: 1.1rem;
 }
 
+.cabecalho .menu #abrir-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--cor-botao);
+    border-radius: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+
+.cabecalho .menu #lista-menu{
+    display: none;
+    padding: 1rem;
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    background: var(--cor-fundo-caixa) no-repeat;
+    border-radius: 1rem;
+    margin-top: .3rem;
+    border: var(--cor-borda) double .5rem;
+}
+
 .cabecalho .menu a{
-    text-decoration: none;
     color: var(--cor-texto);
+    transition: ease .3s all;
 }
 
 .cabecalho .menu a:hover{
-    text-decoration: underline;
+    color: #fff;
+}
+
+.fonte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: fixed;
+    top: 28%;
+    right: 2%;
+}
+
+.fonte button{
+    border: none;
+    background-color: var(--cor-botao);
+    padding: .5rem;
+    border-radius: 1rem;
+    transition: transform .3s;
+    cursor: pointer;
+}
+
+.fonte button:hover{
+    transform: scale(1.1);
 }
 
 .container{
@@ -85,18 +132,20 @@ body{
     width: 60%;
 }
 
-.sobre, .produtos{
+.sobre, .produtos, .contato{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--cor-fundo-caixa);
+    background: var(--cor-fundo-caixa) no-repeat;
     border: var(--cor-borda) double .5rem;
     border-radius: 1rem;
     padding: 1rem;
     gap: 1rem;
-    
+    -webkit-box-shadow: -1px 14px 13px 3px rgba(0,0,0,0.19);
+    -moz-box-shadow: -1px 14px 13px 3px rgba(0,0,0,0.19);
+    box-shadow: -1px 14px 13px 3px rgba(0,0,0,0.19);
 }
 
 .sobre>h2, .produtos>h2{
@@ -113,7 +162,7 @@ body{
     padding: 1rem;
     cursor: pointer;
     animation: piscar 1s infinite;
-    transition: transform .3s ;
+    transition: transform .3s;
 }
 
 .produtos .saiba-mais:hover{
@@ -132,6 +181,32 @@ body{
     }
 }
 
+.contato .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contato .formulario input, textarea{
+    border: none;
+    background-color: var(--cor-fundo);
+    border-radius: .5rem;
+    width: 200px;
+    resize: none;
+    padding: .5rem;
+}
+
+.contato .formulario button{
+    border: none;
+    background-color:var(--cor-botao);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
 .rodape{
     display: flex;
     flex-direction: column;
@@ -141,4 +216,26 @@ body{
     padding: 1rem;
     margin-top: 2rem;
     background-color: var(--cor-fundo-rodape);
+}
+
+.rodape .redes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.rodape .redes li{
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.rodape .redes li:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 1240px){
+    .container{
+        width: 40%;
+    }
 }
