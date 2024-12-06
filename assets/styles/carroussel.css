@@ -1,0 +1,79 @@
+.carroussel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.carroussel .roupas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: var(--cor-fundo-caixa) no-repeat;
+    border: var(--cor-borda) .5rem double;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.carroussel .imagem img{
+    
+    margin-top: 1rem;
+    border-radius: 1rem;
+    transition: transform .3s ease-in-out;
+}
+.carroussel .imagem img:hover{
+    transform: scale(1.1);
+}
+
+.carroussel .roupas .tamanhos, .carroussel .roupas .estampas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.carroussel .roupas .tamanhos li, .carroussel .roupas .estampas li{
+    background: #fff;
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+    border: var(--cor-texto) .2rem solid;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.carroussel .roupas .tamanhos li:hover, .carroussel .roupas .estampas li:hover{
+    transform: scale(1.1);
+}
+
+.carroussel .roupas .tamanhos li:active, .carroussel .roupas .estampas li:active{
+    background: aqua;
+}
+
+.carroussel .roupas .preco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.carroussel .roupas .preco #adicionar-carrinho{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: .3s ease-in-out;
+}
+
+.carroussel .roupas .preco #adicionar-carrinho:hover{
+    transform: scale(1.1);
+}
+
+

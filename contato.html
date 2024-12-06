@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/imgs/icon-star.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/contato.css">
     <title>Dreamland Shop</title>
 </head>
 
@@ -20,13 +21,14 @@
             <button type="button" title="abrir-menu" id="abrir-menu"><box-icon name='menu'></box-icon></button>
             <ul id="lista-menu">
                 <li><a href="./index.html" rel="noopener noreferrer">Início</a></li>
-                <li><a href="./produtos.html" rel="noopener noreferrer">Roupas</a></li>
-                <li><a href="./produtos.html" rel="noopener noreferrer">Acessórios</a></li>
+                <li><a href="./roupas.html" rel="noopener noreferrer">Roupas</a></li>
+                <li><a href="./acessorios.html" rel="noopener noreferrer">Acessórios</a></li>
+                <li><a href="./pelucias.html" rel="noopener noreferrer">Pelúcias</a></li>
                 <li><a href="./contato.html" rel="noopener noreferrer">Contato</a></li>
-                <li><a href="./sobre.html" rel="noopener noreferrer">Sobre</a></li>
+                <li><a href="./sobre.html" rel="noopener noreferrer">Sobre Nós</a></li>
             </ul>
             
-            <a class="compras" href="#"><box-icon type='solid' name='cart'></box-icon></a>
+            <a title="carrinho de compras" class="compras" href="#"><box-icon type='solid' name='cart'></box-icon></a>
         </nav>
         
     </header>
@@ -42,27 +44,32 @@
         <section class="contato">
             <h2>Contato</h2>
             <p>Caso houver alguma dúvida ou problema com a compra</p>
-            <form class="formulario" action="">
-                <label for="text">Nome:</label>
-                <input title="nome" type="text" name="nome" id="">
+            <form class="formulario">
+                <label for="nome">Nome e Sobrenome:</label>
+                <input title="nome" type="text" name="nome" placeholder="Não pode apelido" minlength="3"> 
+                
                 <label for="email">E-mail:</label>
-                <input title="email" type="email" name="email" id=""> 
+                <input title="email" type="email" name="email" placeholder="nome@email.com"> 
+                
                 <label for="mensagem">Mensagem</label>
-                <textarea title="mensagem" name="mensagem" cols="10" rows="8"></textarea>
-                <button type="submit">Enviar</button>
+                <textarea title="mensagem" name="mensagem" cols="10" rows="8" placeholder="Escreva sua mensagem"></textarea>
+                
+                <button title="enviar" type="submit">Enviar</button>
             </form>
         </section>
     </main>
     <footer class="rodape">
         <h8>&copy; Dreamland Shop. Todos os direitos reservados</h8>
+        
+        <h4>Nossas Redes Sociais:</h4>
         <ul class="redes">
             <li>
-                <a href="http://facebook.com.br" target="_blank" rel="noopener noreferrer">
+                <a title="facebook" href="http://facebook.com.br" target="_blank" rel="noopener noreferrer">
                     <box-icon type='logo' name='facebook-circle' size='md'></box-icon>
                 </a>
             </li>
             <li>
-                <a href="http://instagram.com.br" target="_blank" rel="noopener noreferrer">
+                <a title="instagram" href="http://instagram.com.br" target="_blank" rel="noopener noreferrer">
                     <box-icon name='instagram-alt' type='logo' size='md'></box-icon>
                 </a>
             </li>

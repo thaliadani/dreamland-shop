@@ -1,7 +1,7 @@
-const abrirMenu = document.getElementById("abrir-menu");
+
 const listaMenu = document.getElementById("lista-menu");
 
-abrirMenu.addEventListener('click', () => {
+document.getElementById("abrir-menu").addEventListener('click', () => {
     if (listaMenu.style.display === "none") {
         listaMenu.style.display = "block";
         } else{
@@ -9,19 +9,11 @@ abrirMenu.addEventListener('click', () => {
         }
 })
 
-const tamanhoFonte = document.querySelector("html");
-const aumentarFonte = document.getElementById("aumentar-fonte");
-const diminuirFonte = document.getElementById("diminuir-fonte");
-
-aumentarFonte.addEventListener('click' , () =>{
-    if(tamanhoFonte){
-        tamanhoFonte.style.fontSize = "1.3rem";
-    }
+document.getElementById("aumentar-fonte").addEventListener('click' , () =>{
+    document.body.style.fontSize = "1.5rem";
 })
 
-diminuirFonte.addEventListener('click' , () =>{
-    if(tamanhoFonte){
-        tamanhoFonte.style.fontSize = "1rem";
-    }
+document.getElementById("diminuir-fonte").addEventListener('click' , () =>{
+    document.body.style.fontSize = "1rem";
 })
 

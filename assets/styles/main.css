@@ -42,6 +42,7 @@ body{
     gap: 1rem;
     font-size: 1.5rem;
     text-shadow: -3px 1px 3px rgba(0, 0, 0, 0.322);
+    padding-bottom: 1rem;
 }
 
 .cabecalho .menu{
@@ -52,6 +53,13 @@ body{
     padding: 0 2rem;
     color: var(--cor-texto);
     font-size: 1.1rem;
+}
+
+.cabecalho .menu .compras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6rem;
 }
 
 .cabecalho .menu #abrir-menu{
@@ -72,20 +80,24 @@ body{
     display: none;
     padding: 1rem;
     position: absolute;
-    top: 18%;
-    left: 5%;
+    top: 17%;
+    left: 8%;
     background: var(--cor-fundo-caixa) no-repeat;
     border-radius: 1rem;
     margin-top: .3rem;
     border: var(--cor-borda) double .5rem;
 }
 
-.cabecalho .menu a{
+.cabecalho .menu #lista-menu li{
+    margin: .5rem 0;
+}
+
+.cabecalho .menu #lista-menu li a{
     color: var(--cor-texto);
     transition: ease .3s all;
 }
 
-.cabecalho .menu a:hover{
+.cabecalho .menu #lista-menu li a:hover{
     color: #fff;
 }
 
@@ -106,6 +118,8 @@ body{
     border-radius: 1rem;
     transition: transform .3s;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .fonte button:hover{
@@ -181,32 +195,6 @@ body{
     }
 }
 
-.contato .formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.contato .formulario input, textarea{
-    border: none;
-    background-color: var(--cor-fundo);
-    border-radius: .5rem;
-    width: 200px;
-    resize: none;
-    padding: .5rem;
-}
-
-.contato .formulario button{
-    border: none;
-    background-color:var(--cor-botao);
-    padding: 1rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-
 .rodape{
     display: flex;
     flex-direction: column;
@@ -218,11 +206,15 @@ body{
     background-color: var(--cor-fundo-rodape);
 }
 
+.rodape h4{
+    padding-top: 1rem;
+}
+
 .rodape .redes{
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 
 .rodape .redes li{
@@ -235,6 +227,24 @@ body{
 }
 
 @media screen and (min-width: 1240px){
+    .cabecalho .menu{
+        justify-content: center;
+    }
+    .cabecalho .menu #abrir-menu{
+        display: none;
+    }
+    .cabecalho .menu #lista-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        background: none;
+        border: none;
+    }
+    .cabecalho .menu #lista-menu li a:hover{
+        color: #e26262;      
+    }
     .container{
         width: 40%;
     }
