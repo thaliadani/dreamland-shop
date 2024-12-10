@@ -30,9 +30,11 @@ body{
 }
 
 .cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     padding: 1rem;
-    margin-bottom: 3rem;
 }
 
 .cabecalho .titulo{
@@ -60,6 +62,11 @@ body{
     align-items: center;
     justify-content: center;
     padding-left: 6rem;
+    transition: .3s all;
+}
+
+.cabecalho .menu .compras:hover{
+    transform: scale(1.1);
 }
 
 .cabecalho .menu #abrir-menu{
@@ -81,7 +88,6 @@ body{
     padding: 1rem;
     position: absolute;
     top: 17%;
-    left: 8%;
     background: var(--cor-fundo-caixa) no-repeat;
     border-radius: 1rem;
     margin-top: .3rem;
@@ -109,6 +115,7 @@ body{
     position: fixed;
     top: 28%;
     right: 2%;
+    z-index: 2;
 }
 
 .fonte button{
@@ -132,7 +139,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 70%;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .container .imagem{
@@ -228,6 +235,7 @@ body{
 
 @media screen and (min-width: 1240px){
     .cabecalho .menu{
+        display: flex;
         justify-content: center;
     }
     .cabecalho .menu #abrir-menu{

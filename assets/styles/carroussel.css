@@ -1,35 +1,67 @@
-.carroussel{
+.carrossel{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
     text-align: center;
-    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+    border: var(--cor-borda) .5rem double;
+    border-radius: 1rem;
+    width: 302px;
 }
 
-.carroussel .roupas{
+.prev, .next{
+    position: absolute;
+    top:55%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 2rem;
+}
+
+.prev{
+    left: 5%;
+}
+
+.next{
+    right: 5%;
+}
+
+.next:hover, .prev:hover{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+/* .carrossel-produtos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+.carrossel .produto{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     background: var(--cor-fundo-caixa) no-repeat;
-    border: var(--cor-borda) .5rem double;
-    border-radius: 1rem;
     padding: 1rem;
 }
 
-.carroussel .imagem img{
-    
+.carrossel .produto .imagem img{
     margin-top: 1rem;
     border-radius: 1rem;
     transition: transform .3s ease-in-out;
 }
-.carroussel .imagem img:hover{
+.carrossel .produto .imagem img:hover{
     transform: scale(1.1);
 }
 
-.carroussel .roupas .tamanhos, .carroussel .roupas .estampas{
+.tamanhos, .cores{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +69,7 @@
     font-weight: 600;
 }
 
-.carroussel .roupas .tamanhos li, .carroussel .roupas .estampas li{
+.tamanhos li, .cores li{
     background: #fff;
     padding: .2rem .5rem;
     border-radius: .5rem;
@@ -46,24 +78,23 @@
     transition: .2s ease-in-out;
 }
 
-.carroussel .roupas .tamanhos li:hover, .carroussel .roupas .estampas li:hover{
+.tamanhos li:hover, .cores li:hover{
     transform: scale(1.1);
 }
 
-.carroussel .roupas .tamanhos li:active, .carroussel .roupas .estampas li:active{
-    background: aqua;
+.tamanhos li:active, .cores li:active{
+    background: rgb(164, 177, 177);
 }
-
-.carroussel .roupas .preco{
+.produto .preco{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
+    padding-top: .5rem;
 }
-
-.carroussel .roupas .preco #adicionar-carrinho{
+.preco #adicionar-carrinho{
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -72,7 +103,7 @@
     transition: .3s ease-in-out;
 }
 
-.carroussel .roupas .preco #adicionar-carrinho:hover{
+.preco #adicionar-carrinho:hover{
     transform: scale(1.1);
 }
 

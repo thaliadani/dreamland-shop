@@ -1,136 +1,320 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/imgs/icon-star.svg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./assets/styles/main.css" />
-    <link rel="stylesheet" href="./assets/styles/carroussel.css">
-    <title>Dreamland Shop</title>
-  </head>
 
-  <body>
-    <header class="cabecalho">
-      <section class="titulo">
-        <img src="./assets/imgs/icon-star.svg" alt="logo" />
-        <h1>Dreamland Shop</h1>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/imgs/icon-star.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+  <link rel="stylesheet" href="./assets/styles/carroussel.css">
+  <title>Dreamland Shop</title>
+</head>
 
-      <nav class="menu">
-        <button type="button" title="abrir-menu" id="abrir-menu">
-          <box-icon name="menu"></box-icon>
-        </button>
-        <ul id="lista-menu">
-          <li><a href="./index.html" rel="noopener noreferrer">Início</a></li>
-          <li><a href="./roupas.html" rel="noopener noreferrer">Roupas</a></li>
-          <li>
-            <a href="./acessorios.html" rel="noopener noreferrer">Acessórios</a>
-          </li>
-          <li>
-            <a href="./pelucias.html" rel="noopener noreferrer">Pelúcias</a>
-          </li>
-          <li>
-            <a href="./contato.html" rel="noopener noreferrer">Contato</a>
-          </li>
-          <li>
-            <a href="./sobre.html" rel="noopener noreferrer">Sobre Nós</a>
-          </li>
-        </ul>
+<body>
+  <header class="cabecalho">
+    <section class="titulo">
+      <img src="./assets/imgs/icon-star.svg" alt="logo" />
+      <h1>Dreamland Shop</h1>
+    </section>
 
-        <a title="carrinho de compras" class="compras" href="#"
-          ><box-icon type="solid" name="cart"></box-icon
-        ></a>
-      </nav>
-    </header>
-
-    <div class="fonte">
-      <button type="button" id="aumentar-fonte">+ Fonte</button>
-      <button type="button" id="diminuir-fonte">- Fonte</button>
-    </div>
-
-    <main class="container">
-      <section class="carroussel">
-        <h3>Camisetas</h2>
-        <div class="roupas">
-            <h4 class="titulo">Camiseta de manga curta Kirby Adventure</p>
-          <figure class="imagem">
-            <img src="./assets/imgs/roupas/camiseta-kirby-adventure.avif" alt="blusa-1" />
-          </figure>
-          
-          
-          <h4>Estampas</h4>
-          <ol class="estampas">
-            <li>1</li>
-            <li>2</li>
-            <li>2</li>
-            <li>4</li>
-            <li>5</li>
-          </ol>
-
-          <h4>Tamanhos</h5>
-          <ol class="tamanhos">
-            <li>PP</li>
-            <li>P</li>
-            <li>M</li>
-            <li>G</li>
-            <li>GG</li>
-          </ol>
-
-          <div class="preco">
-            <span>R$59,99</span>
-            <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
-            <box-icon type="solid" name="cart" size="sm"></box-icon>
-            </button>
-          </div>
-        </div>
-
-        
-      </section>
-      
-      <section class="carrossel roupas">
-        <h3>Blusas</h2>
-      </section>
-
-
-      <section class="carrossel roupas">
-        <h3>Moletons</h2>
-        <div></div>
-      </section>
-    </main>
-
-    <footer class="rodape">
-      <h8>&copy; Dreamland Shop. Todos os direitos reservados</h8>
-
-      <h4>Nossas Redes Sociais:</h4>
-      <ul class="redes">
+    <nav class="menu">
+      <button type="button" title="abrir-menu" id="abrir-menu">
+        <box-icon name="menu"></box-icon>
+      </button>
+      <ul id="lista-menu">
+        <li><a href="./index.html" rel="noopener noreferrer">Início</a></li>
+        <li><a href="./roupas.html" rel="noopener noreferrer">Roupas</a></li>
         <li>
-          <a
-            title="facebook"
-            href="http://facebook.com.br"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <box-icon type="logo" name="facebook-circle" size="md"></box-icon>
-          </a>
+          <a href="./pelucias.html" rel="noopener noreferrer">Pelúcias</a>
         </li>
         <li>
-          <a
-            title="instagram"
-            href="http://instagram.com.br"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <box-icon name="instagram-alt" type="logo" size="md"></box-icon>
-          </a>
+          <a href="./contato.html" rel="noopener noreferrer">Contato</a>
+        </li>
+        <li>
+          <a href="./sobre.html" rel="noopener noreferrer">Sobre Nós</a>
         </li>
       </ul>
-    </footer>
 
-    <script src="./assets/src/script.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  </body>
+      <a title="carrinho de compras" class="compras" href="#"><box-icon type="solid" name="cart"
+          size='md'></box-icon></a>
+    </nav>
+  </header>
+
+  <div class="fonte">
+    <button type="button" id="aumentar-fonte">+ Fonte</button>
+    <button type="button" id="diminuir-fonte">- Fonte</button>
+  </div>
+
+  <main class="container">
+    <h2>Camisetas</h2>
+    <section class="carrossel">
+      <button class="prev"><</button>
+
+          
+            <div class="produto">
+              <h4 class="titulo">Camiseta de manga curta Kirby Adventure</p>
+                <figure class="imagem">
+                  <img src="./assets/imgs/roupas/camiseta-kirby-adventure.avif" />
+                </figure>
+
+                <h4>Cores</h4>
+                <ol class="cores">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>2</li>
+                  <li>4</li>
+                  <li>5</li>
+                </ol>
+
+                <h4>Tamanhos</h5>
+                  <ol class="tamanhos">
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                  </ol>
+
+                  <div class="preco">
+                    <span>R$59,99</span>
+                    <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                      <box-icon type="solid" name="cart" size="sm"></box-icon>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="produto">
+              <h4 class="titulo">Camiseta de manga curta Kirby no bolso</p>
+                <figure class="imagem">
+                  <img src="./assets/imgs/roupas/camiseta-kirby-bolso.webp" />
+                </figure>
+
+                <h4>Cores</h4>
+                <ol class="cores">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>2</li>
+                  <li>4</li>
+                  <li>5</li>
+                </ol>
+
+                <h4>Tamanhos</h5>
+                  <ol class="tamanhos">
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                  </ol>
+
+                  <div class="preco">
+                    <span>R$59,99</span>
+                    <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                      <box-icon type="solid" name="cart" size="sm"></box-icon>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="produto">
+              <h4 class="titulo">Camiseta de manga curta Kirbys empilhados</p>
+                <figure class="imagem">
+                  <img src="./assets/imgs/roupas/camiseta-kirbys-empilhados.webp" />
+                </figure>
+
+                <h4>Cores</h4>
+                <ol class="cores">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ol>
+
+                <h4>Tamanhos</h5>
+                  <ol class="tamanhos">
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                  </ol>
+
+                  <div class="preco">
+                    <span>R$59,99</span>
+                    <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                      <box-icon type="solid" name="cart" size="sm"></box-icon>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="produto">
+              <h4 class="titulo">Camiseta de manga curta Kirby poses</p>
+                <figure class="imagem">
+                  <img src="./assets/imgs/roupas/camiseta-kirby-poses.jpg" alt="blusa-1" />
+                </figure>
+
+                <h4>Tamanhos</h5>
+                  <ol class="tamanhos">
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                  </ol>
+
+                  <div class="preco">
+                    <span>R$59,99</span>
+                    <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                      <box-icon type="solid" name="cart" size="sm"></box-icon>
+                    </button>
+                  </div>
+            </div>
+          
+
+          <button class="next">></button>
+    </section>
+
+    <h2>Moletons</h2>
+    <section class="carrossel">
+      <button class="prev"><</button>
+
+          <div class="carrossel-produtos">
+            <div class="produto">
+              <h4 class="titulo">Moletom Happy Kirby Pop Star</p>
+                <figure class="imagem">
+                  <img src="./assets/imgs/roupas/moletom-happy-kirby.webp" />
+                </figure>
+
+                <h4>Tamanhos</h5>
+                  <ol class="tamanhos">
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                  </ol>
+
+                  <div class="preco">
+                    <span>R$299,99</span>
+                    <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                      <box-icon type="solid" name="cart" size="sm"></box-icon>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="produto">
+              <h4 class="titulo">Moletom Kirby Bruxo</p>
+                <figure class="imagem">
+                  <img src="./assets/imgs/roupas/moletom-kirby-bruxo.webp" />
+                </figure>
+
+                <h4>Cores</h4>
+                <ol class="cores">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>2</li>
+                  <li>4</li>
+                </ol>
+
+                <h4>Tamanhos</h5>
+                  <ol class="tamanhos">
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                  </ol>
+
+                  <div class="preco">
+                    <span>R$259,99</span>
+                    <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                      <box-icon type="solid" name="cart" size="sm"></box-icon>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="produto">
+              <h4 class="titulo">Moletom Kirbys</p>
+                <figure class="imagem">
+                  <img src="./assets/imgs/roupas/moletom-kirbys.webp" />
+                </figure>
+
+                <h4>Cores</h4>
+                <ol class="cores">
+                  <li>1</li>
+                  <li>2</li>
+                </ol>
+
+                <h4>Tamanhos</h5>
+                  <ol class="tamanhos">
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                  </ol>
+
+                  <div class="preco">
+                    <span>R$239,99</span>
+                    <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                      <box-icon type="solid" name="cart" size="sm"></box-icon>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="produto">
+              <h4 class="titulo">Moletom Kirby Planeta</p>
+                <figure class="imagem">
+                  <img src="./assets/imgs/roupas/moletom-kirby-planeta.avif" alt="blusa-1" />
+                </figure>
+
+                <h4>Cores</h4>
+                <ol class="cores">
+                  <li>1</li>
+                  <li>2</li>
+                </ol>
+
+                <h4>Tamanhos</h5>
+                  <ol class="tamanhos">
+                    <li>PP</li>
+                    <li>P</li>
+                    <li>M</li>
+                    <li>G</li>
+                    <li>GG</li>
+                  </ol>
+
+                  <div class="preco">
+                    <span>R$219,99</span>
+                    <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                      <box-icon type="solid" name="cart" size="sm"></box-icon>
+                    </button>
+                  </div>
+            </div>
+          </div>
+
+          <button class="next">></button>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <h8>&copy; Dreamland Shop. Todos os direitos reservados</h8>
+
+    <h4>Nossas Redes Sociais:</h4>
+    <ul class="redes">
+      <li>
+        <a title="facebook" href="http://facebook.com.br" target="_blank" rel="noopener noreferrer">
+          <box-icon type="logo" name="facebook-circle" size="md"></box-icon>
+        </a>
+      </li>
+      <li>
+        <a title="instagram" href="http://instagram.com.br" target="_blank" rel="noopener noreferrer">
+          <box-icon name="instagram-alt" type="logo" size="md"></box-icon>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="./assets/src/script.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
 </html>

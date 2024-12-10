@@ -1,4 +1,4 @@
-
+//Abrir menu
 const listaMenu = document.getElementById("lista-menu");
 
 document.getElementById("abrir-menu").addEventListener('click', () => {
@@ -9,6 +9,7 @@ document.getElementById("abrir-menu").addEventListener('click', () => {
         }
 })
 
+//Aumentar fonte e diminuir fonte
 document.getElementById("aumentar-fonte").addEventListener('click' , () =>{
     document.body.style.fontSize = "1.5rem";
 })
@@ -17,3 +18,7 @@ document.getElementById("diminuir-fonte").addEventListener('click' , () =>{
     document.body.style.fontSize = "1rem";
 })
 
+//Carrossel
+
+const produtosContainer = document.querySelector('.sliders')
+const produtos = document.querySelectorAll('.sliders .roupas')
