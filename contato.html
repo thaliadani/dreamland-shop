@@ -18,7 +18,9 @@
         </section>
 
         <nav class="menu">
-            <button type="button" title="abrir-menu" id="abrir-menu"><box-icon name='menu'></box-icon></button>
+            <button type="button" id="abrir-menu">
+                <box-icon></box-icon>
+            </button>
             <ul id="lista-menu">
                 <li><a href="./index.html" rel="noopener noreferrer">Início</a></li>
                 <li><a href="./roupas.html" rel="noopener noreferrer">Roupas</a></li>
@@ -26,10 +28,12 @@
                 <li><a href="./contato.html" rel="noopener noreferrer">Contato</a></li>
                 <li><a href="./sobre.html" rel="noopener noreferrer">Sobre Nós</a></li>
             </ul>
-            
-            <a title="carrinho de compras" class="compras" href="#"><box-icon type='solid' name='cart' size='md'></box-icon></a>
+
+            <a title="carrinho de compras" class="compras" href="#">
+                <box-icon type="solid" name="cart" size="md"></box-icon>
+            </a>
         </nav>
-        
+
     </header>
 
     <div class="fonte">
@@ -41,37 +45,41 @@
         <figure class="imagem">
             <img src="./assets/imgs/kirby-star.png" alt="kirby em uma estrela">
         </figure>
-        
+
         <section class="contato">
             <h2>Contato</h2>
-            <p>Caso houver alguma dúvida ou problema com a compra</p>
+            <p>Em caso de dúvidas ou problemas com a compra, entre em contato conosco:</p>
+
             <form class="formulario">
                 <label for="nome">Nome e Sobrenome:</label>
-                <input title="nome" type="text" name="nome" placeholder="Não pode apelido" minlength="3"> 
-                
+                <input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" minlength="3" required>
+
                 <label for="email">E-mail:</label>
-                <input title="email" type="email" name="email" placeholder="nome@email.com"> 
+                <input id="email" type="email" name="email" placeholder="nome@email.com" required>
 
                 <label for="telefone">Celular:</label>
-                <input title="telefone" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx">
+                <input id="telefone" type="tel" name="telefone" placeholder="(xx)xxxxx-xxxx"
+                    pattern="\(\d{2}\) \d{5}-\d{4}" required>
 
                 <label for="assunto">Assunto:</label>
-                <input title="assunto" type="text" name="assunto" placeholder="Assunto">
+                <input id="assunto" type="text" name="assunto" placeholder="Assunto" required>
 
-                <label for="assunto">Codigo do produto(Caso tiver)</label>
-                <input title="assunto" type="text" name="assunto">
-                
-                <label for="mensagem">Mensagem</label>
-                <textarea title="mensagem" name="mensagem" cols="10" rows="8" placeholder="Escreva sua mensagem"></textarea>
-                
-                <button title="enviar" type="submit">Enviar</button>
+                <label for="codigo-produto">Código do produto (se houver):</label>
+                <input id="codigo-produto" type="text" name="codigo_produto" placeholder="Código do produto">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"
+                    required></textarea>
+
+                <button type="submit">Enviar</button>
             </form>
         </section>
+
     </main>
-    
+
     <footer class="rodape">
         <h8>&copy; Dreamland Shop. Todos os direitos reservados</h8>
-        
+
         <h4>Nossas Redes Sociais:</h4>
         <ul class="redes">
             <li>
@@ -86,7 +94,7 @@
             </li>
         </ul>
     </footer>
-    
+
     <script src="./assets/src/script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>

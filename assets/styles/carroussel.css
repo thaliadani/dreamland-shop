@@ -104,7 +104,7 @@
 }
 
 .tamanhos li:active, .cores li:active{
-    background: rgb(164, 177, 177);
+    background: var(--cor-botao);
 }
 .produto .preco{
     display: flex;
