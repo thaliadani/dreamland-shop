@@ -25,6 +25,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100vw;
+    height: 100%;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
 }
@@ -210,7 +211,7 @@ body{
     justify-content: center;
     width: 100%;
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 20rem;
     background-color: var(--cor-fundo-rodape);
 }
 

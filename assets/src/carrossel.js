@@ -1,23 +1,26 @@
-const produtosContainer = document.querySelector('.carrossel .produtos')
-const produto = document.querySelectorAll('.carrossel .produtos .produto')
+function criarCarrossel(carrosselSelector) {
+    const produtos = document.querySelector(`${carrosselSelector} .produtos`);
+    const produto = document.querySelectorAll(`${carrosselSelector} .produtos .produto`);
+    const prev = document.querySelector(`${carrosselSelector} .prev`);
+    const next = document.querySelector(`${carrosselSelector} .next`);
+    let indiceAtual = 0;
 
-const prev = document.querySelector('.prev')
-const next = document.querySelector('.next')
+    function atualizarCarrossel() {
+        const desvio = -indiceAtual * produtos.offsetWidth;
+        produtos.style.transform = `translateX(${desvio}px)`;
+    }
 
-let indiceAtual = 0
+    prev.addEventListener('click', () => {
+        indiceAtual = (indiceAtual - 1 + produto.length) % produto.length;
+        atualizarCarrossel();
+    });
 
-function atualizarCarrossel() {
-    const desvio = -indiceAtual * 320
-    produtosContainer.style.transform = `translateX(${desvio}px)`
+    next.addEventListener('click', () => {
+        indiceAtual = (indiceAtual + 1) % produto.length;
+        atualizarCarrossel();
+    });
 }
 
-prev.addEventListener('click', () => {
-    indiceAtual =(indiceAtual - 1 + produto.length) % produto.length
-    atualizarCarrossel()
-})
-
-next.addEventListener('click', () => {
-    indiceAtual = (indiceAtual + 1) % produto.length
-    atualizarCarrossel()
-})
-
+// Inicializando os carrosséis
+criarCarrossel('.carrossel');
+criarCarrossel('.carrossel2');

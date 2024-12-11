@@ -35,8 +35,9 @@
                 </li>
             </ul>
 
-            <a title="carrinho de compras" class="compras" href="#"><box-icon type="solid" name="cart"
-                    size='md'></box-icon></a>
+            <a title="carrinho de compras" class="compras" href="#">
+                <box-icon type="solid" name="cart" size='md'></box-icon>
+            </a>
         </nav>
     </header>
 
@@ -47,62 +48,63 @@
 
     <main class="container">
         <h2>Pelúcias</h2>
-        <section class="carroussel">
+        <section class="carrossel">
+            <button class="prev"><</button> 
 
-                <button class="prev"><</button>
-                    <div class="pelucias">
-                        <h4 class="titulo">Pelúcia Kirby</p>
-                            <figure class="imagem">
-                                <img src="./assets/imgs/pelucias/pelucia-kirby.webp" />
-                            </figure>
-                                <div class="preco">
-                                    <span>R$79,99</span>
-                                    <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
-                                        <box-icon type="solid" name="cart" size="sm"></box-icon>
-                                        </button>
-                                </div>
-                    </div>
+            <div class="produtos pelucias">
+                <div class="produto pelucia">
+                    <h4 class="titulo">Pelúcia Kirby</p>
+                        <figure class="imagem">
+                            <img src="./assets/imgs/pelucias/pelucia-kirby.webp" />
+                        </figure>
+                        <div class="preco">
+                            <span>R$79,99</span>
+                            <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                                <box-icon type="solid" name="cart" size="sm"></box-icon>
+                            </button>
+                        </div>
+                </div>
 
-                    <div class="pelucias">
-                        <h4 class="titulo">Pelúcia Kirby em uma Estrela</p>
-                            <figure class="imagem">
-                                <img src="./assets/imgs/pelucias/pelucia-kirby-estrela.webp" />
-                            </figure>
+                <div class="produto pelucia">
+                            <h4 class="titulo">Pelúcia Kirby em uma Estrela</p>
+                                <figure class="imagem">
+                                    <img src="./assets/imgs/pelucias/pelucia-kirby-estrela.webp" />
+                                </figure>
                                 <div class="preco">
                                     <span>R$189,99</span>
                                     <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
                                         <box-icon type="solid" name="cart" size="sm"></box-icon>
-                                        </button>
+                                    </button>
                                 </div>
-                    </div>
+                </div>
 
-                    <div class="pelucias">
-                        <h4 class="titulo">Pelúcia Kirby</p>
-                            <figure class="imagem">
-                                <img src="./assets/imgs/pelucias/pelucia-kirby-link.webp" />
-                            </figure>
+                <div class="produto pelucia">
+                            <h4 class="titulo">Pelúcia Kirby</p>
+                                <figure class="imagem">
+                                    <img src="./assets/imgs/pelucias/pelucia-kirby-link.webp" />
+                                </figure>
                                 <div class="preco">
                                     <span>R$79,99</span>
                                     <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
                                         <box-icon type="solid" name="cart" size="sm"></box-icon>
-                                        </button>
+                                    </button>
                                 </div>
-                    </div>
+                </div>
 
-                    <div class="pelucias">
-                        <h4 class="titulo">Pelúcia Kirby Yo-Yo</p>
-                            <figure class="imagem">
-                                <img src="./assets/imgs/pelucias/pelucia-kirby-yoyo.jpg" />
-                            </figure>
+                <div class="produto pelucia">
+                            <h4 class="titulo">Pelúcia Kirby Yo-Yo</p>
+                                <figure class="imagem">
+                                    <img src="./assets/imgs/pelucias/pelucia-kirby-yoyo.jpg" />
+                                </figure>
                                 <div class="preco">
                                     <span>R$179,99</span>
                                     <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
                                         <box-icon type="solid" name="cart" size="sm"></box-icon>
-                                        </button>
+                                    </button>
                                 </div>
-                    </div>
-
-                <button class="next">></button>
+                </div>
+            </div>
+            <button class="next">></button>
         </section>
 
     </main>
@@ -126,6 +128,7 @@
     </footer>
 
     <script src="./assets/src/script.js"></script>
+    <script src="./assets/src/carrossel.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 

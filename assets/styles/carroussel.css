@@ -1,4 +1,4 @@
-.carrossel{
+.carrossel, .carrossel2{
     display: flex;
     text-align: center;
     align-items: center;
@@ -6,12 +6,11 @@
     overflow: hidden;
     border: var(--cor-borda) .5rem double;
     border-radius: 1rem;
-    width: 80%;
 }
 
-.prev, .next{
+.carrossel .prev, .carrossel  .next, .carrossel2 .prev, .carrossel2 .next{
     position: absolute;
-    top:55%;
+    top:45%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -23,52 +22,63 @@
     font-size: 2rem;
 }
 
+.carrossel2 .prev, .carrossel2 .next{
+    top: 120%;
+}
+
 .prev{
-    left: 10%;
+    left: 20%;
 }
 
 .next{
-    right: 10%;
+    right: 20%;
 }
 
 .next:hover, .prev:hover{
     background-color: rgba(0, 0, 0, .8);
 }
 
-.carrossel .produtos{
+.produtos{
     display: flex;
-    align-items:center;
-    justify-content:start;
-    width: 320px;
+    align-items: center;
+    max-width: 300px;
+    transition: transform .5s;
 }
 
-.carrossel .produto{
+.carrossel .pelucias{
+    max-width: 250px;
+}
+
+.produto{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: .5rem;
-    background: var(--cor-fundo-caixa) no-repeat;
+    justify-content: space-around;
     padding: 2rem;
     width: 100%;
-    height: 600px;
-    
+    height: 580px;
+    gap: .5rem;
+    background: var(--cor-fundo-caixa) no-repeat;
 }
 
-.carrossel .produto .imagem{
+.carrossel .pelucia{
+    height: 340px;
+}
+
+.produto .imagem{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
 }
 
-.carrossel .produto .imagem img{
+.produto .imagem img{
     width: 200px;
-    height: 220px;
-    margin-top: 1rem;
     border-radius: 1rem;
     transition: transform .3s ease-in-out;
 }
-.carrossel .produto .imagem img:hover{
+.produto .imagem img:hover{
     transform: scale(1.1);
 }
 
