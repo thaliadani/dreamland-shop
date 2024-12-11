@@ -80,18 +80,19 @@ body{
     cursor: pointer;
     position: relative;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .cabecalho .menu #lista-menu{
     display: none;
     padding: 1rem;
     position: absolute;
-    top: 17%;
+    top: 10%;
     background: var(--cor-fundo-caixa) no-repeat;
     border-radius: 1rem;
     margin-top: .3rem;
     border: var(--cor-borda) double .5rem;
+    z-index: 1;
 }
 
 .cabecalho .menu #lista-menu li{
@@ -153,7 +154,7 @@ body{
     width: 60%;
 }
 
-.sobre, .produtos, .contato{
+.sobre, .card, .contato{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,11 +170,11 @@ body{
     box-shadow: -1px 14px 13px 3px rgba(0,0,0,0.19);
 }
 
-.sobre>h2, .produtos>h2{
+.sobre>h2, .card>h2{
     text-shadow: -3px 1px 3px rgba(0, 0, 0, 0.322);
 }
 
-.produtos .saiba-mais{
+.card .saiba-mais{
     border: none;
     border-radius: .5rem;
     background-color: var(--cor-botao);
@@ -186,7 +187,7 @@ body{
     transition: transform .3s;
 }
 
-.produtos .saiba-mais:hover{
+.card .saiba-mais:hover{
     transform: scale(1.1);
 }
 

@@ -1,12 +1,12 @@
 .carrossel{
     display: flex;
-    align-items: start;
     text-align: center;
-    position: relative;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     border: var(--cor-borda) .5rem double;
     border-radius: 1rem;
-    width: 302px;
+    width: 80%;
 }
 
 .prev, .next{
@@ -24,35 +24,46 @@
 }
 
 .prev{
-    left: 5%;
+    left: 10%;
 }
 
 .next{
-    right: 5%;
+    right: 10%;
 }
 
 .next:hover, .prev:hover{
     background-color: rgba(0, 0, 0, .8);
 }
 
-/* .carrossel-produtos{
+.carrossel .produtos{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-} */
+    align-items:center;
+    justify-content:start;
+    width: 320px;
+}
 
 .carrossel .produto{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: .5rem;
     background: var(--cor-fundo-caixa) no-repeat;
-    padding: 1rem;
+    padding: 2rem;
+    width: 100%;
+    height: 600px;
+    
+}
+
+.carrossel .produto .imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carrossel .produto .imagem img{
+    width: 200px;
+    height: 220px;
     margin-top: 1rem;
     border-radius: 1rem;
     transition: transform .3s ease-in-out;

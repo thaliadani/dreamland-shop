@@ -17,8 +17,3 @@ document.getElementById("aumentar-fonte").addEventListener('click' , () =>{
 document.getElementById("diminuir-fonte").addEventListener('click' , () =>{
     document.body.style.fontSize = "1rem";
 })
-
-//Carrossel
-
-const produtosContainer = document.querySelector('.sliders')
-const produtos = document.querySelectorAll('.sliders .roupas')
