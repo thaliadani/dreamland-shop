@@ -24,6 +24,8 @@
     width: 200px;
     resize: none;
     padding: .5rem;
+    font-size: 1rem;
+    width: 100%;
 }
 
 .contato .formulario button{
