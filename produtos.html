@@ -7,6 +7,10 @@
   <link rel="shortcut icon" href="./assets/imgs/icon-star.svg" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/styles/main.css" />
   <link rel="stylesheet" href="./assets/styles/carroussel.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <title>Dreamland Shop</title>
 </head>
 
@@ -45,13 +49,15 @@
 
   <main class="container">
     <h2>Camisetas</h2>
-    <section class="carrossel">
-      <button class="prev"><</button>
-      
-      <div class="produtos">
-        
-        <div class="produto">  
-        <h4 class="titulo">Camiseta Kirby Adventure</p>
+  <!-- Slider main container -->
+  <div class="swiper">
+  <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+    <!-- Slides -->
+    
+    <div class="swiper-slide">
+      <div class="produto">  
+        <h4 class="titulo">Camiseta Kirby Adventure</h4>
         <figure class="imagem">
           <img src="./assets/imgs/roupas/camiseta-kirby-adventure.avif" />
         </figure>
@@ -65,7 +71,7 @@
               <li>5</li>
           </ol>
 
-          <h4>Tamanhos</h5>
+          <h4>Tamanhos</h4>
           <ol class="tamanhos">
                 <li>PP</li>
                 <li>P</li>
@@ -80,10 +86,12 @@
                   <box-icon type="solid" name="cart" size="sm"></box-icon>
                 </button>
           </div>
-        </div>
-
-        <div class="produto">
-            <h4 class="titulo">Camiseta Kirby no bolso</p>
+      </div>
+    </div>
+    
+    <div class="swiper-slide">
+      <div class="produto">
+            <h4 class="titulo">Camiseta Kirby no bolso</h4>
               <figure class="imagem">
                     <img src="./assets/imgs/roupas/camiseta-kirby-bolso.webp" />
               </figure>
@@ -97,7 +105,7 @@
                     <li>5</li>
                   </ol>
 
-                  <h4>Tamanhos</h5>
+                  <h4>Tamanhos</h4>
                     <ol class="tamanhos">
                       <li>PP</li>
                       <li>P</li>
@@ -112,10 +120,12 @@
                         <box-icon type="solid" name="cart" size="sm"></box-icon>
                       </button>
                     </div>
-        </div>
-
-        <div class="produto">
-                <h4 class="titulo">Camiseta Kirbys empilhados</p>
+      </div>
+    </div>
+    
+    <div class="swiper-slide">
+      <div class="produto">
+                <h4 class="titulo">Camiseta Kirbys empilhados</h4>
                   <figure class="imagem">
                     <img src="./assets/imgs/roupas/camiseta-kirbys-empilhados.webp" />
                   </figure>
@@ -127,7 +137,7 @@
                     <li>3</li>
                   </ol>
 
-                  <h4>Tamanhos</h5>
+                  <h4>Tamanhos</h4>
                     <ol class="tamanhos">
                       <li>PP</li>
                       <li>P</li>
@@ -142,10 +152,12 @@
                         <box-icon type="solid" name="cart" size="sm"></box-icon>
                       </button>
                     </div>
-        </div>
+      </div>
+    </div>
 
-        <div class="produto">
-                <h4 class="titulo">Camiseta Kirby poses</p>
+    <div class="swiper-slide">
+      <div class="produto">
+                <h4 class="titulo">Camiseta Kirby poses</h4>
                   <figure class="imagem">
                     <img src="./assets/imgs/roupas/camiseta-kirby-poses.jpg" alt="blusa-1" />
                   </figure>
@@ -159,7 +171,7 @@
                     <li>5</li>
                   </ol>
 
-                  <h4>Tamanhos</h5>
+                  <h4>Tamanhos</h4>
                     <ol class="tamanhos">
                       <li>PP</li>
                       <li>P</li>
@@ -174,25 +186,38 @@
                         <box-icon type="solid" name="cart" size="sm"></box-icon>
                       </button>
                     </div>
-        </div>
-
       </div>
+    </div>
 
-      <button class="next">></button>
-    </section>
+  </div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  </div>
 
     <h2>Moletons</h2>
-    <section class="carrossel2">
-      <button class="prev"><</button> 
+    <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
       
-      <div class="produtos">
-          <div class="produto">
-            <h4 class="titulo">Moletom Happy Kirby Pop Star</p>
+      <div class="swiper-slide">
+        <div class="produto">
+            <h4 class="titulo">Moletom Happy Kirby Pop Star</h4>
               <figure class="imagem">
                 <img src="./assets/imgs/roupas/moletom-happy-kirby.webp" />
               </figure>
 
-              <h4>Tamanhos</h5>
+              <h4>Cores</h4>
+              <ol class="cores">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ol>
+
+              <h4>Tamanhos</h4>
                 <ol class="tamanhos">
                   <li>PP</li>
                   <li>P</li>
@@ -207,10 +232,12 @@
                     <box-icon type="solid" name="cart" size="sm"></box-icon>
                   </button>
                 </div>
-          </div>
-
-          <div class="produto">
-            <h4 class="titulo">Moletom Kirby Bruxo</p>
+        </div>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="produto">
+            <h4 class="titulo">Moletom Kirby Bruxo</h4>
               <figure class="imagem">
                 <img src="./assets/imgs/roupas/moletom-kirby-bruxo.webp" />
               </figure>
@@ -219,11 +246,11 @@
               <ol class="cores">
                 <li>1</li>
                 <li>2</li>
-                <li>2</li>
+                <li>3</li>
                 <li>4</li>
               </ol>
 
-              <h4>Tamanhos</h5>
+              <h4>Tamanhos</h4>
                 <ol class="tamanhos">
                   <li>PP</li>
                   <li>P</li>
@@ -238,10 +265,12 @@
                     <box-icon type="solid" name="cart" size="sm"></box-icon>
                   </button>
                 </div>
-          </div>
-
-          <div class="produto">
-            <h4 class="titulo">Moletom Kirbys</p>
+        </div>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="produto">
+            <h4 class="titulo">Moletom Kirbys</h4>
               <figure class="imagem">
                 <img src="./assets/imgs/roupas/moletom-kirbys.webp" />
               </figure>
@@ -252,7 +281,7 @@
                 <li>2</li>
               </ol>
 
-              <h4>Tamanhos</h5>
+              <h4>Tamanhos</h4>
                 <ol class="tamanhos">
                   <li>PP</li>
                   <li>P</li>
@@ -267,10 +296,12 @@
                     <box-icon type="solid" name="cart" size="sm"></box-icon>
                   </button>
                 </div>
-          </div>
-
-          <div class="produto">
-            <h4 class="titulo">Moletom Kirby Planeta</p>
+        </div>
+      </div>
+  
+      <div class="swiper-slide">
+        <div class="produto">
+            <h4 class="titulo">Moletom Kirby Planeta</h4>
               <figure class="imagem">
                 <img src="./assets/imgs/roupas/moletom-kirby-planeta.avif" alt="blusa-1" />
               </figure>
@@ -281,7 +312,7 @@
                 <li>2</li>
               </ol>
 
-              <h4>Tamanhos</h5>
+              <h4>Tamanhos</h4>
                 <ol class="tamanhos">
                   <li>PP</li>
                   <li>P</li>
@@ -296,19 +327,25 @@
                     <box-icon type="solid" name="cart" size="sm"></box-icon>
                   </button>
                 </div>
-          </div>
+        </div>
       </div>
-
-      <button class="next">></button>
-    </section>
-
-      <h2>Pelúcias</h2>
-      <section class="carrossel3">
-          <button class="prev"><</button> 
-
-          <div class="produtos pelucias">
-              <div class="produto pelucia">
-                  <h4 class="titulo">Kirby</p>
+    </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+    
+  <h2>Pelúcias</h2> 
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+      <!-- Slides -->
+      
+      <div class="swiper-slide">
+        <div class="produto">
+                  <h4 class="titulo">Pelúcia Kirby</h4>
                       <figure class="imagem">
                           <img src="./assets/imgs/pelucias/pelucia-kirby.webp" />
                       </figure>
@@ -318,10 +355,12 @@
                               <box-icon type="solid" name="cart" size="sm"></box-icon>
                           </button>
                       </div>
-              </div>
-
-              <div class="produto pelucia">
-                          <h4 class="titulo">Pelúcia Kirby Estrela</p>
+        </div>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="produto">
+                          <h4 class="titulo">Pelúcia Kirby Estrela</h4>
                               <figure class="imagem">
                                   <img src="./assets/imgs/pelucias/pelucia-kirby-estrela.webp" />
                               </figure>
@@ -331,38 +370,46 @@
                                       <box-icon type="solid" name="cart" size="sm"></box-icon>
                                   </button>
                               </div>
-              </div>
-
-              <div class="produto pelucia">
-                          <h4 class="titulo">Pelúcia Kirby</p>
+        </div>
+      </div>
+      
+      <div class="swiper-slide">
+        <div class="produto">
+                          <h4 class="titulo">Pelúcia Kirby Link</h4>
                               <figure class="imagem">
                                   <img src="./assets/imgs/pelucias/pelucia-kirby-link.webp" />
                               </figure>
                               <div class="preco">
                                   <span>R$79,99</span>
-                                  <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
-                                      <box-icon type="solid" name="cart" size="sm"></box-icon>
-                                  </button>
-                              </div>
-              </div>
-
-              <div class="produto pelucia">
-                          <h4 class="titulo">Pelúcia Kirby Yo-Yo</p>
-                              <figure class="imagem">
-                                  <img src="./assets/imgs/pelucias/pelucia-kirby-yoyo.jpg" />
-                              </figure>
-                              <div class="preco">
-                                  <span>R$179,99</span>
-                                  <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
-                                      <box-icon type="solid" name="cart" size="sm"></box-icon>
-                                  </button>
-                              </div>
-              </div>
-          </div>
-          <button class="next">></button>
-      </section>
+        <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+        <box-icon type="solid" name="cart" size="sm"></box-icon>
+        </button>
+        </div>
+        </div>
+      </div>
   
-
+      <div class="swiper-slide">
+        <div class="produto">
+            <h4 class="titulo">Pelúcia Kirby Yo-Yo</h4>
+              <figure class="imagem">
+                <img src="./assets/imgs/pelucias/pelucia-kirby-yoyo.jpg" />
+              </figure>
+            
+              <div class="preco">
+                <span>R$179,99</span>
+            
+                <button id="adicionar-carrinho" type="button" title="Adicionar no carrinho">
+                  <box-icon type="solid" name="cart" size="sm"></box-icon>
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
   </main>
 
   <footer class="rodape">
@@ -384,6 +431,7 @@
   </footer>
 
   <script src="./assets/src/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./assets/src/carrossel.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
