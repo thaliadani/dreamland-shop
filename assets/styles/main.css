@@ -256,4 +256,14 @@ body{
     .cabecalho .menu #lista-menu li a:hover{
         color: #e26262;      
     }
+
+    .container{
+        width: 40%;
+    }
+
+    .container .imagem img{
+        width: 400px;
+    }
+
+    
 }
