@@ -94,7 +94,7 @@
     background-color: #fff;
     border: #000 .2rem solid;
     border-radius: 1rem;
-    padding: .4rem 1rem;
+    padding: .4rem .8rem;
     cursor: pointer;
     transition: transform .2s ease-in-out;
 }
