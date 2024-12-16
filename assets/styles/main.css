@@ -80,7 +80,7 @@ body{
     display: none;
     padding: 1.2rem;
     position: absolute;
-    top: 12%;
+    top: 10%;
     background: var(--cor-fundo-caixa) no-repeat;
     border-radius: 1rem;
     border: var(--cor-borda) double .5rem;
