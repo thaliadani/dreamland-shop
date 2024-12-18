@@ -28,6 +28,7 @@ body{
     height: 100%;
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
+    transition: ease-in-out .3s all;
 }
 
 .cabecalho{
