@@ -12,7 +12,7 @@
 :root{
     --cor-fundo: #fff8f8;
     --cor-fundo-rodape: #ebb9ff;
-    --cor-fundo-caixa:linear-gradient(90deg, rgba(254,152,196,1) 0%, rgba(255,179,212,1) 71%);;
+    --cor-fundo-caixa:linear-gradient(90deg, rgba(254,152,196,1) 0%, rgba(255,179,212,1) 71%);
     
     --cor-texto: #272626;
     --cor-borda: #ffe77d;
