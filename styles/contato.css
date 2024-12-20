@@ -1,0 +1,44 @@
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato p{
+    margin-bottom: 1.5rem;
+}
+
+.contato .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.contato .formulario input, textarea{
+    border: none;
+    background-color: var(--cor-fundo);
+    border-radius: .5rem;
+    width: 200px;
+    resize: none;
+    padding: .5rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contato .formulario button{
+    border: none;
+    background-color:var(--cor-botao);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+.contato .formulario button:hover{
+    transform: scale(1.1);
+}
